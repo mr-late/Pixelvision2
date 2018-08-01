@@ -62,13 +62,11 @@
 		place { controls=TitleLabel region=top }
 		place { controls=DescriptionLabel width=max region=top start=TitleLabel dir=down margin-top=8 }
 
-		place { controls=EnableOverlayCheck region=top start=DescriptionLabel dir=down height=20 margin-top=10 margin-left=-3 }
-		place { controls=EnableSCTenfootOverlayCheck region=top start=EnableOverlayCheck dir=down height=20 margin-left=-3 }
-		place { controls=EnableVRDesktopGameTheaterCheck region=top start=EnableSCTenfootOverlayCheck dir=down height=20 margin-left=-3 }
+		place { controls=EnableOverlayCheck,EnableSCTenfootOverlayCheck,EnableVRDesktopGameTheaterCheck region=top start=DescriptionLabel dir=down height=15 margin-top=10 margin-left=-3 spacing=9 }
 
 		place { controls=HotKeySelectorLabel,HotKeySelector dir=down spacing=5 width=max region=topleft start=EnableVRDesktopGameTheaterCheck margin-top=20 }
 		
-		place { controls=ShowIngameFPSLabel,ShowIngameFPSCombo dir=down spacing=5 start=HotKeySelector margin-top=48 width=max region=topleft }
+		place { controls=ShowIngameFPSLabel,ShowIngameFPSCombo dir=down spacing=5 start=HotKeySelector margin-top=49 width=max region=topleft }
 		place { controls=ShowIngameFPSContrastCheck dir=down spacing=5 start=ShowIngameFPSCombo height=20 margin-left=-3 margin-top=9 region=topleft }
 			
 		place { controls=ScreenshotLabel region=topright start=HotKeySelectorLabel }
@@ -80,11 +78,11 @@
 			width=max
 			height=24
 			region=topright }
-		place { control=ScreenshotActionLabel region=topright start=SetScreenshotFolderButton dir=down margin-top=19 }
+		place { control=ScreenshotActionLabel region=topright start=SetScreenshotFolderButton dir=down margin-top=20 }
 		place { controls=ScreenshotNotifyCheck,ScreenshotPlaySoundCheck,ScreenshotSaveUncompressedCheck dir=down start=ScreenshotActionLabel
-			margin-top=6 margin-left=10 height=22 width=max region=topright }
+			margin-top=6 margin-left=10 height=15 width=max region=topright spacing=9 }
 		
-		place { control=Divider1 region=bottom width=max margin-top=15 }
+		place { control=Divider1 region=bottom width=max margin-top=10 }
 		place { controls="PingRateLabel" region=bottom start=Divider1 margin-top=10 width=max dir=down }
 		place { controls="PingRateCombo" region=bottom start=PingRateLabel margin-top=10 width=235 dir=down height=25 }
 		place { controls="PingRateInfo" region=bottom start=PingRateCombo margin-top=10 width=235 dir=down }				
